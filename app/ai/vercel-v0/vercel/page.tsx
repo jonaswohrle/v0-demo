@@ -369,9 +369,9 @@ export default function VercelPlatformPage() {
 
 // No provider package needed
 const result = streamText({
-  model: "openai/gpt-5.2",     // or
-  // model: "anthropic/claude-opus-4.5",
-  // model: "google/gemini-2.5-pro",
+  model: "openai/gpt-5",     // or
+  // model: "anthropic/claude-opus-4.7",
+  // model: "google/gemini-3.5-flash",
   prompt: "Explain quantum computing",
 })`}
                   </pre>
@@ -410,7 +410,7 @@ const result = streamText({
             <div className="mt-6 grid gap-8 sm:grid-cols-3">
               <FeatureCard
                 icon={Cpu}
-                title="AI SDK 6"
+                title="AI SDK 7"
                 description="The open-source TypeScript toolkit for AI apps. Unified provider API, streaming responses, structured outputs, tool calling, and multi-step agent patterns."
               />
               <FeatureCard

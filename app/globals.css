@@ -9,6 +9,11 @@
 }
 
 @layer base {
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+
   :root {
     /* ── Valtech Design: Black #000 + Off-White/Beige #F5F0EB ── */
     --background: 0 0% 0%;

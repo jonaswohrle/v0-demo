@@ -24,7 +24,7 @@ export async function POST(req: Request) {
         send("status", { step: "research", state: "running" })
 
         const research = await generateText({
-          model: "google/gemini-2.5-flash",
+          model: "google/gemini-3.5-flash",
           tools: { google_search: google.tools.googleSearch({}) },
           prompt: `Research the topic "${topic}" for a professional blog post. 
             Use Google Search to find the latest information.
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
 
         /* ── Step 2: Generate metadata ── */
         const meta = await generateText({
-          model: "openai/gpt-5.2",
+          model: "openai/gpt-5",
           output: Output.object({
             schema: z.object({
               title: z.string().describe("Compelling blog post title"),
@@ -69,7 +69,7 @@ export async function POST(req: Request) {
 
         const draftPromise = (async () => {
           const result = streamText({
-            model: "openai/gpt-5.2",
+            model: "openai/gpt-5",
             prompt: `You are a senior technical writer. Write a well-structured blog post about "${topic}".
 
 Title: ${meta.output?.title}
