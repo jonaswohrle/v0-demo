@@ -93,13 +93,13 @@ export default function AIShowcasesPage() {
           {[
             {
               icon: Code2,
-              label: "AI SDK 6",
+              label: "AI SDK 7",
               desc: "useChat, streamText, tool calling, Output.object()",
             },
             {
               icon: Cpu,
               label: "AI Gateway",
-              desc: "Unified model routing: GPT-5.2, Claude, Gemini, Grok",
+              desc: "Unified model routing: GPT-5, Claude, Gemini, Grok",
             },
             {
               icon: Layers,
@@ -129,11 +129,11 @@ export default function AIShowcasesPage() {
             href="/vercel/prompt-coach"
             icon={MessageSquare}
             concepts={["useChat", "Tool Calling", "Structured Output", "Streaming"]}
-            sdkPattern={`streamText({\n  model: "openai/gpt-5.2",\n  tools: { analyzePrompt, rewritePrompt }\n})`}
+            sdkPattern={`streamText({\n  model: "openai/gpt-5",\n  tools: { analyzePrompt, rewritePrompt }\n})`}
           />
           <DemoCard
             title="AI Image Studio"
-            description="Generate and transform images with Gemini 3 Pro. Upload reference images and describe transformations."
+            description="Generate and transform images with Gemini. Upload reference images and describe transformations."
             href="/vercel/image-studio"
             icon={ImagePlus}
             concepts={["Multimodal Input", "Image Generation", "File Upload", "Base64"]}
@@ -141,7 +141,7 @@ export default function AIShowcasesPage() {
           />
           <DemoCard
             title="Content Pipeline"
-            description="Multi-model agent: Gemini researches the web, GPT-5.2 drafts, Gemini generates a hero image -- all streaming into a live blog."
+            description="Multi-model agent: Gemini researches the web, GPT-5 drafts, Gemini generates a hero image -- all streaming into a live blog."
             href="/vercel/content-pipeline"
             icon={GitBranch}
             concepts={["Multi-Model", "Parallel AI", "SSE Streaming", "Pipeline"]}
@@ -169,7 +169,7 @@ export default function AIShowcasesPage() {
               },
               {
                 title: "Multi-Model Orchestration",
-                desc: "Running Gemini Search, GPT-5.2, and Gemini Image in parallel with SSE streaming into a live preview.",
+                desc: "Running Gemini Search, GPT-5, and Gemini Image in parallel with SSE streaming into a live preview.",
               },
             ].map((item) => (
               <div key={item.title} className="flex flex-col gap-2">

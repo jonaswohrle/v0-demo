@@ -42,8 +42,8 @@ interface BlogData {
 
 const STEP_META: { id: StepId; label: string; model: string; icon: React.ElementType }[] = [
   { id: "research", label: "Web Research", model: "Gemini + Google Search", icon: Globe },
-  { id: "draft", label: "Article Draft", model: "GPT-5.2", icon: FileText },
-  { id: "image", label: "Hero Image", model: "Gemini 3 Pro", icon: ImageIcon },
+  { id: "draft", label: "Article Draft", model: "GPT-5", icon: FileText },
+  { id: "image", label: "Hero Image", model: "Gemini Image", icon: ImageIcon },
 ]
 
 const TOPIC_SUGGESTIONS = [
@@ -274,7 +274,7 @@ function BlogPreview({ data, steps }: { data: BlogData; steps: PipelineState }) 
                 <span className="text-xs font-medium text-primary">AI Generated</span>
               </div>
               <span className="text-xs text-muted-foreground">
-                Research by Gemini Search -- Written by GPT-5.2 -- Image by Gemini
+                Research by Gemini Search -- Written by GPT-5 -- Image by Gemini
               </span>
             </div>
           </>
@@ -356,7 +356,7 @@ function EmptyState({ onSelect }: { onSelect: (topic: string) => void }) {
           </h2>
           <p className="mx-auto mt-2 max-w-lg text-sm text-muted-foreground leading-relaxed">
             Watch three AI models collaborate in real-time: Gemini searches the web for research,
-            GPT-5.2 writes the article, and Gemini generates a hero image -- all streaming into a
+            GPT-5 writes the article, and Gemini generates a hero image -- all streaming into a
             live blog preview.
           </p>
         </div>
@@ -418,7 +418,7 @@ function EmptyState({ onSelect }: { onSelect: (topic: string) => void }) {
 
 /* ── Main Page ── */
 export default function ContentPipelinePage() {
-  const [model, setModel] = React.useState("openai/gpt-5.2")
+  const [model, setModel] = React.useState("openai/gpt-5")
   const [topic, setTopic] = React.useState("")
   const [isRunning, setIsRunning] = React.useState(false)
   const [error, setError] = React.useState<string | null>(null)
@@ -551,7 +551,7 @@ export default function ContentPipelinePage() {
           <div>
             <h1 className="text-sm font-heading font-semibold text-foreground">Content Pipeline</h1>
             <p className="text-[11px] text-muted-foreground">
-              Multi-model agent: Gemini Search + GPT-5.2 + Gemini Image
+              Multi-model agent: Gemini Search + GPT-5 + Gemini Image
             </p>
           </div>
         </div>

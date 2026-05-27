@@ -109,9 +109,9 @@ import { streamText } from "ai"
 
 // No provider package needed
 const result = streamText({
-  model: "openai/gpt-5.2",     // or
-  // model: "anthropic/claude-opus-4.5",
-  // model: "google/gemini-2.5-pro",
+  model: "openai/gpt-5",     // or
+  // model: "anthropic/claude-opus-4.7",
+  // model: "google/gemini-3.5-flash",
   prompt: "Explain quantum computing",
 })
 ```
@@ -128,7 +128,7 @@ Build and deploy AI agents that can browse the web, call APIs, manage deployment
 
 #### Additional AI Capabilities
 
-- **AI SDK 6** -- The open-source TypeScript toolkit for AI apps. Unified provider API, streaming responses, structured outputs, tool calling, and multi-step agent patterns.
+- **AI SDK 7** -- The open-source TypeScript toolkit for AI apps. Unified provider API, streaming responses, structured outputs, tool calling, and multi-step agent patterns.
 - **Vercel AI Integrations** -- One-click integrations with Supabase, Neon, Upstash, Stripe, and more. Databases, caching, auth, and payments -- all connected to your AI application.
 - **Enterprise AI Governance** -- Model access policies, usage quotas, audit trails, and content filtering. Control which models your team can use and track spending across projects.
 

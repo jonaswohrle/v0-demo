@@ -346,7 +346,7 @@ export default function Page() {
                       AI Image Studio
                     </h3>
                     <p className="mt-2 text-sm text-[hsl(0,0%,40%)] leading-relaxed">
-                      Generate and transform images with Gemini 3 Pro. Upload reference images, describe transformations, see results.
+                      Generate and transform images with Gemini. Upload reference images, describe transformations, see results.
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2">
@@ -451,7 +451,7 @@ export default function Page() {
           </div>
           <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-foreground/10 pt-8 md:flex-row md:items-center">
             <p className="text-xs text-foreground/40">
-              Built with v0, AI SDK 6, and Vercel AI Gateway
+              Built with v0, AI SDK 7, and Vercel AI Gateway
             </p>
             <div className="flex items-center gap-6">
               <Link href="#" className="text-xs text-foreground/40 transition-colors hover:text-hover">

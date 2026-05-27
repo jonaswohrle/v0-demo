@@ -725,7 +725,7 @@ function Message({
 
 /* ─── Main Page ──────────────────────────────────────────────── */
 export default function PromptCoachPage() {
-  const [model, setModel] = React.useState("openai/gpt-5.2")
+  const [model, setModel] = React.useState("openai/gpt-5")
   const [input, setInput] = React.useState("")
   const textareaRef = React.useRef<HTMLTextAreaElement>(null)
   const scrollRef = React.useRef<HTMLDivElement>(null)
