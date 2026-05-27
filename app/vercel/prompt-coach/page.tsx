@@ -30,6 +30,7 @@ import {
   TrendingUp,
   Copy,
   Check,
+  RotateCcw,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Markdown from "react-markdown"
@@ -739,7 +740,7 @@ export default function PromptCoachPage() {
     [model]
   )
 
-  const { messages, sendMessage, addToolOutput, status } = useChat({
+  const { messages, sendMessage, addToolOutput, setMessages, status } = useChat({
     transport,
     sendAutomaticallyWhen: lastAssistantMessageIsCompleteWithToolCalls,
   })
@@ -795,7 +796,21 @@ export default function PromptCoachPage() {
             </p>
           </div>
         </div>
-        <ModelSelector value={model} onChange={setModel} />
+        <div className="flex items-center gap-2">
+          {messages.length > 0 && (
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setMessages([])}
+              disabled={isDisabled}
+              className="h-8 gap-1.5 text-xs text-muted-foreground hover:text-foreground"
+            >
+              <RotateCcw className="h-3.5 w-3.5" />
+              Reset
+            </Button>
+          )}
+          <ModelSelector value={model} onChange={setModel} />
+        </div>
       </div>
 
       {/* Messages area */}
