@@ -19,7 +19,7 @@ Drei Blöcke -- von der Plattform über Hands-on mit v0 bis hin zu Inspirationen
 v0 ist nicht nur ein Code-Generator -- es verändert grundlegend, wie Teams von der Idee zum fertigen Produkt kommen.
 
 - **Rapid Prototyping** -- Product Manager beschreiben eine Idee in natürlicher Sprache. v0 generiert einen funktionierenden Prototyp in Minuten statt Wochen -- so wie es Okta, eBay und Procore bereits tun.
-- **Vibe Coding für Teams** -- Engineering-Teams nutzen v0 als Coding-Accelerator. Boilerplate generieren, Components scaffolden, interne Tools bauen -- wie bei Microsoft (6.000+ Entwickler) und Amazon.
+- **Agentic Development für Teams** -- Engineering-Teams nutzen v0 als Coding-Accelerator. Boilerplate generieren, Components scaffolden, interne Tools bauen -- wie bei Microsoft (6.000+ Entwickler) und Amazon.
 - **Design System Integration** -- v0 kennt eure Design Tokens, Components und Patterns. Jeder generierte Code folgt automatisch eurem Design System -- konsistent, accessible und on-brand.
 
 ### Referenzen

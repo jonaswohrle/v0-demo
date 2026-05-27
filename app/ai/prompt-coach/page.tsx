@@ -56,7 +56,7 @@ const STARTERS = [
     desc: "Build a production prompt step-by-step",
   },
   {
-    label: "Vibe coding prompt",
+    label: "Lazy prompt",
     text: 'Analyze this prompt: "Make me a website that looks good and has all the features"',
     icon: Sparkles,
     desc: "Learn why vague prompts fail spectacularly",

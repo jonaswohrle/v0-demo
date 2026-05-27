@@ -49,7 +49,7 @@ const STEP_META: { id: StepId; label: string; model: string; icon: React.Element
 const TOPIC_SUGGESTIONS = [
   "The rise of AI agents in software development",
   "Prompt engineering best practices for 2026",
-  "How vibe coding is changing the developer workflow",
+  "How agentic development is changing the developer workflow",
   "Building production AI apps with the Vercel AI SDK",
 ]
 

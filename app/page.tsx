@@ -271,7 +271,7 @@ export default function Page() {
                   icon: Zap,
                 },
                 {
-                  title: "Vibe Coding for Teams",
+                  title: "Agentic Development for Teams",
                   desc: "Engineering teams use v0 as a coding accelerator. Generate boilerplate, scaffold components, build internal tools -- like Microsoft (6,000+ developers) and Amazon.",
                   icon: Code2,
                 },
